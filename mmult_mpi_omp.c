@@ -49,8 +49,8 @@ int main(int argc, char* argv[])
    if (argc > 1) {
     if (myid == 0) {//master
       //fill a and b from file input
-   get_matrix(m1rows, m1cols, fp1);
-   get_matrix(m2rows, m2cols, fp2);
+      aa=get_matrix(m1rows, m1cols, fp1);
+      bb=get_matrix(m2rows, m2cols, fp2);
       
       //start timer
       starttime = MPI_Wtime(); 
